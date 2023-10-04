@@ -1,0 +1,56 @@
+<!--Pedro Henrique Belini  SC3039773-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projeto Pratico 3</title>
+</head>
+
+<body>
+    <a href="index.html">Voltar a página inicial</a>
+    <main>
+        <header>
+            <h1>Clube das Lendas</h1>
+            <img src="fotos/briga.jpeg" alt="Bili e Luna brincando de luta. Luna está em cima e Bili está em baixo"
+                width="150" height="150">
+            <p>Junte-se à comunidade e fique por dentro das notícias sobre os 4 animais lendários!</p>
+        </header>
+        <section>
+            <header>
+                <h2>Preencha o formulário para se inscrever.</h2>
+            </header>
+            <form action="news.html" method="get" autocomplete="off">
+                <p>
+                    <label for="nome">Digite seu nome completo</label>
+                    <input type="text" name="nome" id="nome" minlength="4" maxlength="30"
+                        placeholder="Preencha seu nome completo" required>
+                </p>
+                <p>
+                    <label for="email">Digite seu e-mail</label>
+                    <input type="email" name="email" id="email" value="" placeholder="nome@email.com" required>
+                </p>
+                <p>
+                    <label for="senha">Digite sua senha</label>
+                    <input type="password" id="senha" name="senhaUsuário" minlength="4" maxlength="6"
+                        placeholder="Digite sua senha" required>
+                </p>
+                <fieldset>
+                    <legend>
+                        Deseja receber promoções via e-mail?
+                    </legend>
+
+                    <input type="radio" name="promocao" value="sim" id="sim" checked required>
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="promocao" value="nao" id="nao">
+                    <label for="nao">Não</label>
+                </fieldset>
+                <footer>
+                    <button type="submit">Enviar</button>
+                </footer>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
